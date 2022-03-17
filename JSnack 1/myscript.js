@@ -4,11 +4,6 @@ let arr = [];
 let somma = 0;
 
 //Chiedi all’utente un numero da inserire nell’array.
-
-for (let i = 0; i < arr.length; i++) {
-    somma += arr[i];
-}
-
 //Continua a chiedere i numeri all’utente e a inserirli nell’array fino a quando la somma degli elementi è minore di 50.
 
 while (somma > 50) {
@@ -18,3 +13,8 @@ while (somma > 50) {
     arr.push(numero)
     console.log(arr) 
 }
+
+for (let i = 0; i < arr.length; i++) {
+    somma += arr[i];
+}
+
