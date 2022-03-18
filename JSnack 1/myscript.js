@@ -13,13 +13,10 @@ while (somma < 50) {
     arr.push(numero)
     console.log(arr) 
 
-    somma = 0;
+    somma += numero;
 
-    for (let i = 0; i < arr.length; i++) {
-        somma += arr[i];
-    }
-    
-    console.log(somma)
 }
+
+console.log(somma)
 
 
