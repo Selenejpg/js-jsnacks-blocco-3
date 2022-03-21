@@ -7,17 +7,16 @@ let lista = ["Aldo", "Domenico", "Pippo", "Giorgio", "Filippo", "Marco"];
 let nome = prompt("Inserisci il tuo nome");
 let accesso = false;
 
-while (i < lista.length) {
+while (nome == lista[i] || i < lista.length) {
     if (nome == lista[i]) {
         accesso = true;
     }
     i++;
-    if(accesso == true){
-        i = lista.length+1;
-        console.log("Identificazione riuscita");
-    }
 }
-if(accesso == false){
-    console.log("Identificazione non riuscita");
+
+if(accesso == true){
+    alert("Identificazione riuscita");
+}else{
+    alert("Identificazione non riuscita");
 }
 
